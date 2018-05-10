@@ -1,11 +1,5 @@
-from Tkinter import *
-
-
-import tkFileDialog as fd
 import os, sys, time
 
-root = Tk()
-root.withdraw() # hide root
 
 DIRS = [
     '2 Research',
@@ -17,11 +11,7 @@ DIRS = [
 ]
 
 
-project_home = fd.askdirectory(title="Choose project home directory")
-
-if not project_home: 
-    print "\nNo directory selected. Goodbye!\n"
-    sys.exit()
+project_home = r'../../Projects'
 
 project_name = raw_input("Enter project name (e.g. Carbonite Test Project): ")
 
