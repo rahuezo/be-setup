@@ -1,0 +1,1 @@
+python "C:\Users\Mark\programming_projects\be-setup\be_setup.py"
