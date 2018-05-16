@@ -7,7 +7,8 @@ DIRS = [
     '6 BEA Files',
     '4 Email Syntax',
     '3 Sales Navigator Company Parsing',
-    '1 Triage Form'
+    '1 Triage Form',
+    '7 Final Files'
 ]
 
 
