@@ -2,6 +2,7 @@ import os, sys, time
 
 
 DIRS = [
+    '0 Resources',
     '1 Triage Form',
     '2 Research',
     '3 Sales Navigator Company Parsing',
