@@ -8,7 +8,8 @@ DIRS = [
     '4 Email Syntax',
     '3 Sales Navigator Company Parsing',
     '1 Triage Form',
-    '7 Final Files'
+    '7 Final Files LinkedIn',
+    '8 Final Files Sans LinkedIn',
 ]
 
 
