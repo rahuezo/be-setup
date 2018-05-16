@@ -2,12 +2,12 @@ import os, sys, time
 
 
 DIRS = [
-    '2 Research',
-    '5 BE Ready Files',
-    '6 BEA Files',
-    '4 Email Syntax',
-    '3 Sales Navigator Company Parsing',
     '1 Triage Form',
+    '2 Research',
+    '3 Sales Navigator Company Parsing',
+    '4 Email Syntax',
+    '5 BE Ready Files',
+    '6 BEA Files',    
     '7 Final Files LinkedIn',
     '8 Final Files Sans LinkedIn',
 ]
