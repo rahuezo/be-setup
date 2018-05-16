@@ -32,6 +32,6 @@ for directory in DIRS:
     else:
         print "{} already exists!".format(dir_path)
     
-    time.sleep(1)
+    time.sleep(0.5)
 
 os.startfile(home_path)
