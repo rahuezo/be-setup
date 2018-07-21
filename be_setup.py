@@ -2,8 +2,8 @@ import os, sys, time
 
 
 DIRS = [
-    '0 Resources',
-    '1 Triage Form',
+    ['0 Resources', 'notes.txt' ],
+    '1 Intake Form',
     '2 Research',
     '3 Sales Navigator Company Parsing',
     '4 Email Syntax',
@@ -24,8 +24,11 @@ if not project_name:
 
 home_path = os.path.join(project_home, project_name)
 
-for directory in DIRS: 
-    dir_path = os.path.join(home_path, directory)
+for directory in DIRS:
+    if type(directory) == list:
+        dir_path = os.path.join(home_path, directory[0])
+    else: 
+        dir_path = os.path.join(home_path, directory)
 
     if not os.path.exists(dir_path): 
         os.makedirs(dir_path)
@@ -33,6 +36,10 @@ for directory in DIRS:
     else:
         print "{} already exists!".format(dir_path)
     
+    if type(directory) == list:
+        with open(os.path.join(dir_path, directory[-1]), 'w') as f: 
+            f.write("{} Notes\n".format(project_name))
+
     time.sleep(0.5)
 
 os.startfile(home_path)
