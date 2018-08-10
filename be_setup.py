@@ -16,7 +16,7 @@ DIRS = [
 
 project_home = r'../../Projects'
 
-project_name = raw_input("Enter project name (e.g. Carbonite Test Project): ")
+project_name = raw_input("\nEnter project name (e.g. Carbonite Test Project): ")
 
 if not project_name: 
     print "\nNo project name given. Goodbye!\n"
@@ -38,10 +38,11 @@ for directory in DIRS:
     
     if type(directory) == list:
         with open(os.path.join(dir_path, directory[-1]), 'w') as f: 
-            f.write("{} Notes\n".format(project_name))
+            f.write("{} Notes\n\n".format(project_name))
             f.write("-"*6 + " Timing " + "-"*6)
+            f.write("\n\n")
             f.write("-"*6 + " BE Parameters/Resources " + "-"*6)
 
-    time.sleep(0.5)
+    time.sleep(0.2)
 
 os.startfile(home_path)
