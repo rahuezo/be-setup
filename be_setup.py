@@ -39,6 +39,8 @@ for directory in DIRS:
     if type(directory) == list:
         with open(os.path.join(dir_path, directory[-1]), 'w') as f: 
             f.write("{} Notes\n".format(project_name))
+            f.write("-"*6 + " Timing " + "-"*6)
+            f.write("-"*6 + " BE Parameters/Resources " + "-"*6)
 
     time.sleep(0.5)
 
