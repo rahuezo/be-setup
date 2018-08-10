@@ -39,9 +39,13 @@ for directory in DIRS:
     if type(directory) == list:
         with open(os.path.join(dir_path, directory[-1]), 'w') as f: 
             f.write("{} Notes\n\n".format(project_name))
-            f.write("-"*6 + " Timing " + "-"*6)
+            f.write("-"*6 + "      Timing      " + "-"*6)
             f.write("\n\n")
-            f.write("-"*6 + " BE Parameters/Resources " + "-"*6)
+            f.write("-"*6 + " FrontEnd Queries " + "-"*6)
+            f.write("\n\n")
+            f.write("-"*6 + "    Title List    " + "-"*6)
+            f.write("\n\n")
+            f.write("-"*3 + " Server Search Companies " + "-"*2)
 
     time.sleep(0.2)
 
