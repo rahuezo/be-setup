@@ -1,23 +1,5 @@
 import os, sys, time
 
-BASE_DIRS = [
-    'CSMS and Reports',
-    'Email Campaigns',
-    'Lead Projects'
-]
-
-DIRS = [    
-    ['Lead Projects/{}/0 Resources', 'notes.txt' ],
-    'Lead Projects/{}/1 Intake Form',
-    'Lead Projects/{}/2 Research',
-    'Lead Projects/{}/3 Sales Navigator Company Parsing',
-    'Lead Projects/{}/4 Email Syntax',
-    'Lead Projects/{}/5 BE Ready Files',
-    'Lead Projects/{}/6 BEA Files',    
-    'Lead Projects/{}/7 Final Files LinkedIn',
-]
-
-
 project_home = r'../../Projects'
 
 project_name = raw_input("\nEnter project name (e.g. Carbonite Test Project): ")
@@ -25,6 +7,22 @@ project_name = raw_input("\nEnter project name (e.g. Carbonite Test Project): ")
 if not project_name: 
     print "\nNo project name given. Goodbye!\n"
     sys.exit()
+
+BASE_DIRS = [
+    'CSMS and Reports',
+    'Email Campaigns',
+    'Lead Projects'
+]
+
+DIRS = [    
+    ['Lead Projects/{}/0 Resources', '{} Notes.txt'.format(project_name) ],
+    'Lead Projects/{}/1 Sales Navigator Company Parsing',
+    'Lead Projects/{}/2 BriteVerify Files',
+    'Lead Projects/{}/3 BE Importable Files',
+    'Lead Projects/{}/4 BE Project Files',    
+    'Lead Projects/{}/5 Final Files',
+]
+
 
 for base_directory in BASE_DIRS: 
     dir_path = os.path.join(project_home, base_directory)
